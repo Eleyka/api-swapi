@@ -22,7 +22,32 @@ $(function() {
       // Luego a cada div de la clase container-swapi le adjunto un elemento img con la clase avatar-swapi y su modal
       $('.container-swapi').append('<img class="avatar-swapi" data-toggle="modal"data-target="#exampleModal"/>');
      
-    //silvia
+          // Ahora selecciono todas las etiquetas img, ya creadas.
+          let img = $container.find('img');
+          console.log(img);
+    
+          // Traemos la data de nuestro json data.json que tiene las imagenes,
+          // seria el equivalente a una segunda api
+    
+          $.getJSON('data.json', function(data) {
+            $.each(data, function(index, val) {
+              img.eq(index).attr('src', val);
+              /* console.log(val); */
+              
+            });
+          });
+    
+          $.each(response.results, function(index, value) {
+            a.eq(index).text(value.name);
+            console.log(value.name)
+    
+    /*         img.on('click',function(){
+              console.log(this)
+            }); */
+    
+            $('.modal-body').append(value.name);
+          
+          });
     
     }
   });
