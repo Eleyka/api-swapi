@@ -1,6 +1,12 @@
-# SWAPI
+# SWAPI - Star Wars
 
-> Recuerda seguir siempre esta [guía de estilos](https://github.com/Laboratoria/js-style-guide/)
+## Objetivo:
 
-Que la fuerza te acompañe en este ejercicio, revisa las siguientes slides para que puedas crear esta fenómenal app para los amantes de Star Wars.
+* Aprender el uso del API de Star Wwars
 
+![](public/assets/img/1.png)
+![](public/assets/img/2.PNG)
+
+## Integrantes:
+* Silvia Fuentes
+* Eleyne Ramírez
