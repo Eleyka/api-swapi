@@ -39,7 +39,18 @@ $(document).ready(function(){
       }
     }
   });
-//...
+  //Para traer información al Modal
+  $responseContainer.on('click','.img-response',function(){
+    //Mostramos el nombre de cada personaje
+    $myModalTitle.text($(this)[0].dataset.name)
+    //Agregamos en el cuerpo del modal un div con su respectiv clase
+    $modalBody.empty().append('<div class="container-img-modal"/>');
+    //Seleccionamos todos los elemenos que tengas la clase container-img-modal y agregamos la etiqueta img con su respectiva clase
+    $modalBody.find('.container-img-modal').empty().append('<img class="img-response center">');
+    //Seleccionamos a todas las etiquetas img y le agregamos el atributo src
+    $modalBody.find('img').attr('src',$(this)[0].src);
+
+  });
 
 
 });
