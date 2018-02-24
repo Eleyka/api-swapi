@@ -1,19 +1,23 @@
 body{
-    background-color: wheat;
-}
-
-.name-swapi {
-    display: block;
-    margin-bottom: 2em;
-  
-}
-.avatar-swapi {
-  width: 100px;
-  height: 100px;
-}
-.container-swapi {
-    outline: 1px solid darkblue;
-    width: 200px;
-    height: 200px;
+    background-image: url(../assets/img/fondo.jpg);
+    width: 100%;
+    height: 100vh;
     text-align: center;
 }
+.img-response{
+    width: 200px;
+}
+p{
+color: wheat;
+}
+
+.container-img img {
+    box-shadow: 5px black;
+    border: 1px solid black;
+    border-radius: 5px;
+    position: relative;
+ 
+ }
+ .logo{
+     width: 300px;
+ }
